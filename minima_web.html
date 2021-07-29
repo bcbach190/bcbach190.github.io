@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>sample service 1</title>
+
+<style>
+body {
+	width 100%;
+	height 100px;
+	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/back_minima.png); 
+	background-repeat: no-repeat;
+	background-size: 1500px 1250px;
+	background-position: center;
+}
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.logo{
+	cursor: pointer;
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 ;
+	margin-right: 30px;
+	position: relative;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar ul li a::after{
+	content:"";
+	height:3px;
+	width: 0;
+	background: #7a7a7a;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+.navbar ul li a:hover::after{
+	width: 100%;
+}
+
+*{
+	font-family: sans-serif
+}
+
+.content{
+	width: 95%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+
+.content h1{
+	font-size: 70px;
+	margin-top: 40px;
+}
+
+.content p{
+	font-size: 20px auto;
+	font-weight: 100;
+	line-height: 0;
+
+}
+
+.button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin:20px 10px;
+	border-radius:25px;
+	font-weight: bold;
+	border:2px solid #7a7a7a;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+
+}
+
+span{
+	background: #7a7a7a;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left:0;
+	bottom:0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+button:hover span{
+	width: 100%;
+}
+
+button:hover{
+	border: none;
+}
+</style>
+</head>
+
+<body>
+	<img src="images/company_logo.png" class="logo" width="150px" height="150px">
+	<div class="navbar">
+		
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#news">Designs</a></li>
+			<li><a href="#contact">Templates</a></li>
+			<li><a href="#about">About Us</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h1>EXPERT DESIGNS</h1>
+		<p>START DESIGNING TODAY</p>
+		
+		<div>
+			<button class="button"><span></span>START</button>
+			<button class="button"><span></span>PREMIUM</button>
+		</div>
+	</div>
+</body>
+
+</html>
